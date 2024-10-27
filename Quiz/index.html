@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en" ng-app="quizApp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Include AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <!-- Include ngRoute module -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.js"></script>
+    <!-- Include the AngularJS application script -->
+    <script src="./module/app.js"></script>
+    <!-- Include controller scripts -->
+    <script src="controllers/loginController.js"></script>
+    <script src="controllers/menuController.js"></script>
+    <script src="controllers/quizController.js"></script>
+    <title>Quiz Application</title>
+  </head>
+  <body>
+    <!-- Main container where views will be loaded -->
+    <div ng-view></div>
+  </body>
+</html>
